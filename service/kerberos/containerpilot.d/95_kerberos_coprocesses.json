@@ -1,0 +1,18 @@
+{
+  "coprocesses": [
+    {
+      "name": "kdc",
+      "command": [
+        "krb5kdc", "-n"
+      ],
+      "restarts": "1"
+    },
+    {
+      "name": "kadmin",
+      "command": [
+        "kadmind", "-nofork"
+      ],
+      "restarts": "1"
+    }
+  ]
+}
